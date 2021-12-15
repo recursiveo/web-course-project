@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Profile</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/profile.js"></script>
+    </head>
+    <body onload="getUser()">
+        <header>
+            <div class="navbar top-fixed">
+                <img class="logo" src="images/cart.png">
+                <h1 id="NameTag">Welcome</h1>
+                <nav>
+                    <input type="checkbox"/>
+                    <div class="menu-wrapper">
+                        <ul class="responsive-text" id="menu">
+                            <div class="menulist-container">
+                                <li><a  href="./home.html">Products</a></li>
+                                <li><a class="active" href="./profile.html">Profile</a></li>
+                                <li><a  href="./cart.html">Cart</a></li>
+                                <li><a  href="./AboutUs.html">About</a></li>
+                                <li><a  onclick="logoutFunc()">LogOut</a></li>
+                            </div>
+                        </ul>
+                        <svg class="caret" fill="currentColor" height="35" id="icon" viewBox="0 0 16 16"
+                             width="35" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                                  fill-rule="evenodd"/>
+                        </svg>
+                    </div>
+        
+                </nav>
+        
+            </div>
+        </header>
+        <br><br><br><br><br><br><br>
+        <h1>Profile<h1>
+
+            <div class="card" style="background-color: #fc5e03;" id="detailsDiv">
+                <br>
+                <h1 id="CardNameTag"></h1>
+                <h3 id="CardEmailTag"></h3>
+                <br>
+                <br>
+                <button style="max-width: 200px;" onclick="editDetails('name')" >Edit Name</button><br><br>
+                <button style="max-width: 200px;" onclick="editDetails('email')" >Edit Email</button><br><br>
+                <button style="max-width: 200px;" onclick="editDetails('pass')" >Change Password</button><br><br>
+                
+              </div>
+            
+    </body>
+</html>

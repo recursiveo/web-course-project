@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>About Us - Smart-Electronics</title>
+    <link href="css/AboutUsstyle.css" rel="stylesheet" type="text/css">
+	<script src="js/profile.js"></script>
+</head>
+<body>
+ <body onload="getUser()"></body>
+  <header>
+            <div class="navbar top-fixed">
+                <img class="logo" src="images/cart.png">
+                <h1 id="NameTag">Welcome</h1>
+                <nav>
+                    <input type="checkbox"/>
+                    <div class="menu-wrapper">
+                        <ul class="responsive-text" id="menu">
+                            <div class="menulist-container">
+                                <li><a class="active" href="./home.html">Products</a></li>
+                                <li><a  href="./profile.html">Profile</a></li>
+                                <li><a  href="./cart.html">Cart</a></li>
+                                <li><a  href="./AboutUs.html">About</a></li>
+                                <li><a  onclick="logoutFunc()">LogOut</a></li>
+                            </div>
+                        </ul>
+                        <svg class="caret" fill="currentColor" height="35" id="icon" viewBox="0 0 16 16"
+                             width="35" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                                  fill-rule="evenodd"/>
+                        </svg>
+                    </div>
+        
+                </nav>
+        
+            </div>
+        </header>		
+		
+<!----------------Main Content------------------->
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script> 
+     $(document).ready(function(){
+        $("#image_list a").hover(
+        function(evt) { $(this).stop(true).animate({ top: 15 }, "fast"); },
+        function(evt) { $(this).stop(true).animate({ top: 0 }, "fast"); }
+    ); // end hover
+   });
+   </script>	
+		
+   <div class="about-section">
+   <h1>--------</h1>
+  <h1>About Us</h1>
+  <p>Always The Real Thing, Always Electronics</p>
+  <p>We are a group of Young aspirants inspired by the future, working smart to make your every day life smart, using the smart electronics.</p>
+</div>
+
+ <h2 style="text-align:center">Our Products</h2>
+       <div class="row">
+         <div class="column" >
+		 <a href="Images/t1.jpg" title="thumbnail" >
+          <div class="card">
+	
+          <img src="Images/headphones.jpg"  alt="Jane" style="width:100%">
+	      
+            <div class="container">
+             <h2>HeadPhones</h2>
+             <p>Keeping your ears safe and music loud.</p>
+	        </div>
+          </div>
+		  </a>
+       </div>
+
+       <div class="column">
+	   <a href="Images/t2.jpg" title="thumbnail">
+         <div class="card">
+		
+           <img src="Images/smartwatch.jpg" alt="Mike" style="width:100%">
+	         
+              <div class="container">
+               <h2>Smart Watches</h2>
+               <p>Smart on the inside, Fashionable on the outside.</p>  
+ 			 </div>
+         </div>
+		 </a>
+      </div>
+
+      <div class="column">
+	    <a href="Images/t3.png" title="thumbnail">
+        <div class="card">
+		
+          <img src="Images/smartspeakers.jpg" alt="John" style="width:100%">
+	        
+             <div class="container">
+              <h2>Smart Speakers</h2>
+              <p>Feel the bass in your bones.</p>
+             </div>
+        </div>
+       </div>
+	   </a>
+      </div>
+
+<footer class="footer">
+        <div class="center">
+            <div class="box top-box">
+                &copy All rights reserved. All trade marks are owned by xyz group.
+            </div>
+            <div class="box">
+                Twitter | Instagram | Facebook
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  
+ 
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-image: url("../Images/hd.jpg");
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+/*-------------------------------------*/
+/*      >>> Header Styles <<<          */
+/*-------------------------------------*/
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 0 0 6px 3px grey;
+    /*margin-bottom: 3rem;*/
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    z-index: 2;
+}
+
+.top-fixed {
+    /* For Sticky Navbar */
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    width: 100px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    /* font-weight: bold; */
+}
+
+nav ul {
+    /*max-height: 192px;*/
+    padding-bottom: 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    background-color: var(--off-white);
+}
+
+nav ul li a.active {
+    color: var(--eco);
+}
+
+.caret {
+    display: none;
+}
+
+.menulist-container {
+    margin-top: 2vh;
+}
+
+nav input {
+    display: none;
+}
+
+
+/*-------------------------------------*/
+/*       >>> Footer Styles <<<         */
+/*-------------------------------------*/
+
+.footer {
+    margin: 0;
+    position: relative;
+    max-height: 10rem;
+    background-color: black;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.box {
+    margin: 0 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 1rem;
+}
+
+.top-box {
+    padding-top: 1.5rem;
+}
+
+.center {
+    text-align: center;
+}

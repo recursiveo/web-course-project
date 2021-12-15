@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link href="css/cart-styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/cart_builder.js" type="text/javascript"></script>
+</head>
+<body onload="getUser()">
+<header>
+    <div class="navbar top-fixed">
+        <img class="logo" src="images/cart.png">
+        <h1 id="NameTag">Welcome</h1>
+        <nav>
+            <input type="checkbox"/>
+            <div class="menu-wrapper">
+                <ul class="responsive-text" id="menu">
+                    <div class="menulist-container">
+                        <li><a href="./home.html">Products</a></li>
+                        <li><a href="./profile.html">Profile</a></li>
+                        <li><a class="active" href="./cart.html">Cart</a></li>
+                        <li><a href="./AboutUs.html">About</a></li>
+                        <li><a onclick="logoutFunc()">LogOut</a></li>
+                    </div>
+                </ul>
+                <svg class="caret" fill="currentColor" height="35" id="icon" viewBox="0 0 16 16"
+                     width="35" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                          fill-rule="evenodd"/>
+                </svg>
+            </div>
+
+        </nav>
+
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="content">
+            <div class="responsive-text">
+                <span style="margin-bottom: 1rem;">&nbsp</span>
+                <div class="row">
+                    <div class="flex-main card">
+                        <div class="center">
+                            <h1>CART</h1>
+                            <hr class="hr1">
+                            <div class="row" id="cart-head">
+
+                            </div>
+                            <div id="cart-items">
+                                <!-- JS code goes here -->
+                            </div>
+                            <div id="order-btn">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="center">
+        <div class="box top-box">
+            &copy All rights reserved. All trade marks are owned by xyz group.
+        </div>
+        <div class="box">
+            Twitter | Instagram | Facebook
+        </div>
+    </div>
+</footer>
+</body>
+</html>
